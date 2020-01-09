@@ -2476,7 +2476,7 @@ local json_file, res = https.request("https://raw.githubusercontent.com/masterab
 if res == 200 then
 os.execute("rm -fr files_master/"..file)
 send(msg.chat_id_, msg.id_, 1,t, 1, 'md') 
-dofile('Tshake.lua')  
+dofile('MASTER.lua')  
 else
 send(msg.chat_id_, msg.id_, 1,"*📮 ❙  عذرا لا يوجد هاكذا ملف في المتجر *\n", 1, 'md') 
 end
@@ -2500,7 +2500,7 @@ local chek = io.open("files_master/"..file,'w+')
 chek:write(json_file)
 chek:close()
 send(msg.chat_id_, msg.id_, 1,t, 1, 'md') 
-dofile('Tshake.lua')  
+dofile('MASTER.lua')  
 else
 send(msg.chat_id_, msg.id_, 1,"*📮 ❙  عذرا لا يوجد هاكذا ملف في المتجر *\n", 1, 'md') 
 end
@@ -2842,14 +2842,14 @@ return false
 end
 ------------------------------------------------------------------------
 if text == 'تحديث' then
-dofile('MASTER.lua')  
+dofile('./MASTER.lua')  
 send(msg.chat_id_, msg.id_, 1, '☑ ❙ تم التحديث', 1, 'md')
 end
 if text == ("تحديث السورس") then
 send(msg.chat_id_, msg.id_, 1, '☑ ❙ تم التحديث', 1, 'md')
 os.execute('rm -rf MASTER.lua')
-os.execute('wget https://raw.githubusercontent.com/masterabas/Tshake/master/Tshake.lua')
-dofile('MASTER.lua')  
+os.execute('wget https://raw.githubusercontent.com/SourceMasterNew/MASTER/master/MASTER.lua')
+dofile('./MASTER.lua')  
 return false
 end
 
