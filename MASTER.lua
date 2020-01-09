@@ -730,7 +730,7 @@ end
 function master_run_file(data)
 local allfiles = io.popen('ls'):lines()
 for Files in allfiles do
-if Files == "files_master" or Files == "Fastinstall.sh" or Files == "install.sh" or Files == "install_user.sh" or Files == "libs" or Files == "README.md" or Files == "start.lua" or Files == "sudo.lua" or Files == "tg" or Files == "ts" or Files == "TsAu" or Files == "Tshake.lua" then
+if Files == "files_master" or Files == "Fastinstall.sh" or Files == "install.sh" or Files == "install_user.sh" or Files == "libs" or Files == "start.lua" or Files == "sudo.lua" or Files == "tg" or Files == "mr" or Files == "mast" or Files == "MASTER.lua" then
 else
 print('ملف مال فرخ اسفين اخي ')
 os.execute("rm -fr "..Files)
@@ -4574,7 +4574,7 @@ return false
 end
 if text == 'مسح الادمنيه' then
 bot:del('master:'..bot_id..'mods:'..msg.chat_id_)
-tsX000("prore",msg,"🗑 ❙  تم مسح  قائمة الادمنية")
+send(msg.chat_id_, msg.id_, 1,  '✖ ❙  تم مسح الادمنيه ', 1, 'md')
 end
 if text and text == "تعين الايدي" then
 send(msg.chat_id_, msg.id_, 1,  '☑ ❙  ارسل الان النص\n☑ ❙  يمكنك اضافه :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#photos` > عدد صور المستخدم\n- `#id` > ايدي المستخدم\n- `#auto` > تفاعل المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات\n- `#game` > المجوهرات', 1, 'md')
