@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+cd MASTER
+echo -e "\e[33m  __  __    _    ____ _____ _____ ____ \e[0m"
+echo -e "\e[33m |  \/  |  / \  / ___|_   _| ____|  _ \ \e[0m"
+echo -e "\e[33m | |\/| | / _ \ \___ \ | | |  _| | |_) | \e[0m"
+echo -e "\e[33m | |  | |/ ___ \ ___) || | | |___|  _ < \e[0m"
+echo -e "\e[33m |_|  |_/_/   \_\____/ |_| |_____|_| \_\ \e[0m"
+while(true) do
+lua start.lua 
+done

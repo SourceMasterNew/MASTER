@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+cd ..
+cd MASTER
+screen -S MASTER -X kill
+screen -S MASTER ./mast
